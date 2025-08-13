@@ -30,8 +30,11 @@ CompanyName = 'Unknown'
 Copyright = '(c) RPT. All rights reserved.'
 
 # Description of the functionality provided by this module
-# Description = ''
+Description = @"
+This module is an evolution to my previous module PSSecureCommands (https://github.com/RT271095/PSSecureCommands)
 
+It Allows to generate licenses and encrypt powershell commands with it
+"@
 # Minimum version of the PowerShell engine required by this module
 # PowerShellVersion = ''
 
@@ -129,4 +132,5 @@ PrivateData = @{
 # DefaultCommandPrefix = ''
 
 }
+
 
