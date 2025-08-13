@@ -80,5 +80,7 @@ Name                           Value
 ----                           -----
 main                           {show}
 
-PS C:\Users\rpt>
+PS C:\Users\rpt> # Create a new SPS group by importing an entire folder
+PS C:\Users\rpt> Add-SPSFolder -Group folder -Path "C:\path\to\folder" -License "SomeLicenseName"
+PS C:\Users\rpt> 
 ```
