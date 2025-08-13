@@ -143,6 +143,7 @@ Function Add-SPSCommand {
 	[Parameter(Position=2,mandatory=$true)]
 	[String]$License,
 	[Parameter(Position=3,mandatory=$true)]
+	[AllowEmptyString()]
 	[string]$Command)
 	if($null -eq $global:SPS){
 		$global:SPS = @{}
@@ -246,7 +247,6 @@ Function Import-SPS {
 	param([String]$Path)
 	$global:SPS = get-content $Path -raw | convertfrom-json -ashashtable
 	return $global:SPS
-
 }
 
 <#
